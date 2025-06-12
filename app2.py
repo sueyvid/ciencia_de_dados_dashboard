@@ -13,9 +13,9 @@ def load_data():
     # Assuming the processed data is saved as 'processed_personality_data.csv'
     # If not, you'll need to save the processed 'data' DataFrame to a CSV file first
     try:
-        df = pd.read_csv("processed_personality_data.csv")
+        df = pd.read_csv("personality_dataset.csv")
     except FileNotFoundError:
-        st.error("Processed data file not found. Please ensure 'processed_personality_data.csv' exists.")
+        st.error("Processed data file not found. Please ensure 'personality_dataset.csv' exists.")
         st.stop()
     return df
 
